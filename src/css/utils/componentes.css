@@ -17,11 +17,17 @@
 
 .button {
   display: inline-block;
-  padding: 16px 40px;
-  background: linear-gradient(#e15454, #b42c2c);
+  padding: 16px 50px;
+  background: linear-gradient(#d64242, #b42c2c);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
   margin-top: 40px;
+  color: var(--cor-w);
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 0.9;
 }

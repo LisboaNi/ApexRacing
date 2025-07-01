@@ -34,7 +34,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <div class="main container">
             <div class="title font-2">
                 <h1>Descubra o universo <br> da Fórmula 1<span>.</span></h1>
@@ -59,20 +59,19 @@
         </div>
     </main>
 
-    <section class="history-bg">
+    <section id="history" class="history-bg">
         <div class="history container">
-            <div class="history-content font-3 cor-0">
-                <h2 class="font-2 cor-w">História da Fórmula 1</h2>
-                <span class="cor-p1">DAS RUAS DE MÔNACO AOS AUTÓDROMOS MODERNOS.</span>
+            <div class="history-content font-3 cor-1">
+                <h2 class="font-2 cor-w">História</h2>
                 <p>Desde sua <strong>primeira temporada em 1950</strong>, a Fórmula 1 evoluiu de corridas românticas em ruas apertadas para um dos esportes mais avançados e globais do mundo.</p>
                 <p>Com <strong>pilotos lendários como Fangio, Senna, Schumacher e Hamilton</strong>, a categoria se reinventou a cada década — mantendo sempre a velocidade no centro de tudo.</p>
-                <a class="button" href="./src/public/pilotos.html">PILOTOS <i class="bi bi-arrow-right-circle-fill"></i></a>
+                <a class="button" href="./src/public/pilotos.html">PILOTOS</a>
             </div>
             <img src="./src/img/Home/image-2.jpg" alt="Foto de Marc Kleen">
         </div>
     </section>
 
-    <article>
+    <article id="team">
         <div class="team container">
 
             <div class="team-title">
@@ -136,11 +135,125 @@
         </div>
     </article>
 
-    <section class="curiosity-bg">
-        <div>
+    <section id="curiosity" class="curiosity-bg">
+        <div class="curiosity container">
+            <h2 class="font-2">Curiosidades</h2>
 
+            <div class="tabs-menu">
+                <button class="tab-btn font-4 active" data-tab="1950">1950</button>
+                <button class="tab-btn font-4" data-tab="1970">70-80</button>
+                <button class="tab-btn font-4" data-tab="1994">1994</button>
+                <button class="tab-btn font-4" data-tab="2022">2022</button>
+            </div>
+
+            <div class="tabs-content">
+
+                <div class="tab-content active" id="1950">
+                    <img src="./src/img/Home/image-1.jpg" alt="">
+                    <div>
+                        <h3 class="font-2">Primeira corrida em Silverstone<span>.</span></h3>
+                        <ul class="font-3 cor-3">
+                            <li><i class="bi bi-trophy-fill"></i><span> Vencedor: </span>Giuseppe Farina (Alfa Romeo)</li>
+                            <li><i class="bi bi-lightning-charge-fill"></i><span> Mais rápida: </span>Giuseppe Farina – 1:50.6</li>
+                            <li><i class="bi bi-geo-alt-fill"></i><strong> 13/05/1950</strong>, em <strong>Silverstone</strong>, na Inglaterra.</li>
+                        </ul>
+                    </div>
+                    <div class="text font-3 cor-3">
+                        <p>Farina dominou completamente a prova, fazendo pole position, volta mais rápida e vencendo a corrida — um feito conhecido como "Grand Slam". A corrida também ficou marcada pela presença do rei George VI, sendo a única vez que a realeza britânica assistiu pessoalmente a um GP de F1.</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="1970">
+                    <img src="./src/img/Home/image-1.jpg" alt="">
+                    <div>
+                        <h3 class="font-2">Efeito Solo | Revolução Turbo<span>.</span></h3>
+                        <ul class="font-3 cor-3">
+                            <li><i class="bi bi-trophy-fill"></i><span> Vencedor: </span>Jean Pierre Jabouille (Renault)</li>
+                            <li><i class="bi bi-lightning-charge-fill"></i><span> Mais rápida: </span> René Arnoux – 1:09.16</li>
+                            <li><i class="bi bi-geo-alt-fill"></i><strong> França de 1979</strong>, no circuito de <strong>Dijon-Prenois.</strong></li>
+                        </ul>
+                    </div>
+                    <div class="text font-3 cor-3">
+                        <p>Durante os anos 1970, a Fórmula 1 viveu uma revolução aerodinâmica com a introdução do efeito solo, que aumentava drasticamente a aderência dos carros. Essa corrida também marcou a primeira vitória de um carro com motor turbo na história da Fórmula 1, iniciando uma nova era tecnológica.</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="1994">
+                    <img src="./src/img/Home/image-1.jpg" alt="">
+                    <div>
+                        <h3 class="font-2">Ano da Tragédia | Mudança<span>.</span></h3>
+                        <ul class="font-3 cor-3">
+                            <li><i class="bi bi-trophy-fill"></i><span> Vencedor: </span>Michael Schumacher</li>
+                            <li><i class="bi bi-lightning-charge-fill"></i><span> Mais rápida: </span> Michael Schumacher – 1:24.335</li>
+                            <li><i class="bi bi-geo-alt-fill"></i><strong> GP de San Marino</strong>, no circuito de <strong>Ímola.</strong></li>
+                        </ul>
+                    </div>
+                    <div class="text font-3 cor-3">
+                        <p>A temporada foi marcada por uma das maiores tragédias da Fórmula 1. O mundo perdeu dois pilotos: Roland Ratzenberger e Ayrton Senna. As mortes mudaram completamente a abordagem da FIA em relação à segurança. A partir desse ano, novos padrões de proteção foram adotados, resultando em melhorias.</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="2022">
+                    <img src="./src/img/Home/image-1.jpg" alt="">
+                    <div>
+                        <h3 class="font-2">Regulamentos | Efeito Solo<span>.</span></h3>
+                        <ul class="font-3 cor-3">
+                            <li><i class="bi bi-trophy-fill"></i><span> Vencedor: </span>Charles Leclerc (Ferrari)</li>
+                            <li><i class="bi bi-lightning-charge-fill"></i><span> Mais rápida: </span> Charles Leclerc – 1:34.570</li>
+                            <li><i class="bi bi-geo-alt-fill"></i><strong> GP do Bahrein de 2022</strong></li>
+                        </ul>
+                    </div>
+                    <div class="text font-3 cor-3">
+                        <p>A Fórmula 1 passou por uma das maiores reformas técnicas da era moderna. Voltaram a usar o efeito solo, mas com tecnologia atualizada, buscando melhorar as ultrapassagens. Marcou o início de um novo domínio da Red Bull, com carros extremamente eficientes aerodinamicamente, projetados para o novo regulamento.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
+
+    <section class="newsletter-bg">
+        <div class="newsletter container">
+            <div class="newsletter-conteudo font-3 cor-2">
+                <h3 class="font-2 cor-0">Newsletter</h3>
+                <p>Assine e fique por dentro das novidades</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Seu e-mail">
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-bg">
+        <div class="footer container">
+            <img src="./src/img/ApexRacing.svg" alt="">
+
+            <div class="contact">
+                <h3 class="font-3 cor-2"><strong>CONTATO</strong></h3>
+                <ul class="font-3 cor-2">
+                    <li><a href="mailton:contato@apexracing.com">contato@apexracing.com</a></li>
+                    <li><a href="tel:+55 11 9899-0000">+55 11 9899-0000</a></li>
+                    <li class="icon">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <h3 class="font-3 cor-2"><strong>INFORMAÇÃO</strong></h3>
+                <ul class="font-3 cor-2">
+                    <li><a href="./src/public/pilotos.html">Pilotos</a></li>
+                    <li><a href="./src/public/pistas.html">Pista</a></li>
+                </ul>
+            </div>
+
+            <p class="font-3 cor-w">Apex Racing © Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
 
 </body>
 

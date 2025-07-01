@@ -12,3 +12,6 @@
 @import "./theme/Home/main.css";
 @import "./theme/Home/history.css";
 @import "./theme/Home/team.css";
+@import "./theme/Home/curiosity.css";
+@import "./theme/Home/newsletter.css";
+@import "./theme/Home/resp.css";

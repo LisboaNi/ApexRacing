@@ -14,21 +14,18 @@
 }
 
 .history-content {
-  padding: 10px;
+  padding: 20px;
 }
 
 .history-content h2 {
   font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.history-content span {
-  display: block;
-  font-size: 1rem;
-  letter-spacing: 0;
   margin-bottom: 40px;
 }
 
 .history-content p {
   margin-bottom: 20px;
+}
+
+.history-content strong {
+  color: var(--cor-w);
 }

@@ -1,0 +1,35 @@
+.footer-bg {
+  background: var(--cor-b);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer h3 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.footer li a {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.footer .icon a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.footer li a:hover {
+  color: var(--cor-w);
+}

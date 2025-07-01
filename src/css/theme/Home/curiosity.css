@@ -1,0 +1,79 @@
+.curiosity-bg {
+  background: var(--cor-3);
+  box-shadow: inset 0 300px var(--cor-w);
+}
+
+.curiosity {
+  padding-bottom: 40px;
+}
+
+.curiosity h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+/* ----- */
+.tab-btn {
+  padding: 16px 40px;
+  cursor: pointer;
+  background: var(--cor-p3);
+  color: var(--cor-0);
+  transition: 0.3s;
+}
+
+button {
+  border-radius: 4px 4px 0px 0px;
+  border: 0;
+}
+
+.tab-btn:hover {
+  opacity: 0.9;
+}
+
+/* ---- */
+
+.tabs-content {
+  background: var(--cor-0);
+  padding: 60px;
+  border-radius: 0px 4px 4px 4px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tab-content.active h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.tab-content.active span {
+  font-weight: bold;
+}
+
+.tab-content.active .text {
+  grid-column: 1/-1;
+  border-left: var(--cor-p3) 10px solid;
+}
+
+.tab-content.active .text p {
+  margin-left: 20px;
+}
+
+.tab-content.active li + li {
+  margin-top: 20px;
+}
+
+.tab-btn.active {
+  background: var(--cor-0);
+  color: var(--cor-4);
+  opacity: 1;
+}
