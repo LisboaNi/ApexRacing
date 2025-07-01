@@ -35,13 +35,13 @@
 }
 
 .team-content li:nth-child(3),
-.team-content li:nth-child(8),
+.team-content li:nth-child(7),
 .team-content li:last-child {
   border-right: 0;
 }
 
+.team-content li:nth-child(8),
 .team-content li:nth-child(9),
-.team-content li:nth-child(10),
 .team-content li:last-child {
   border-bottom: 0;
 }

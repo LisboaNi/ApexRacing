@@ -54,12 +54,31 @@
     padding-bottom: 60px;
   }
 
-  .team-content img {
-    height: 40px;
+  .team-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .team-content li {
-    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+  }
+
+  .team-content li {
+    border-bottom: var(--cor-1) 2px solid !important;
+  }
+
+  .team-content li:nth-child(even) {
+    border-left: var(--cor-1) 2px solid;
+  }
+
+  .team-content li:nth-child(9),
+  .team-content li:nth-child(10) {
+    border-bottom: 0 !important;
   }
 
   /* curiosity */
@@ -87,10 +106,136 @@
 
   .newsletter-conteudo h3 {
     font-size: 1.2rem;
+    margin-bottom: 5px;
   }
 
   .newsletter-conteudo p,
-  .newsletter-form input {
+  .newsletter-form input,
+  .newsletter-form button {
     font-size: 0.875rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    flex: none;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-form button {
+    padding: 10px 40px;
+  }
+
+  /* footer */
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer p {
+    grid-column: 1/-1;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header ul {
+    display: block;
+    justify-content: center;
+  }
+
+  .header img {
+    width: 40%;
+  }
+
+  /* Main */
+
+  .main .title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .main .content {
+    grid-template-columns: 1fr;
+  }
+
+  /* History */
+
+  .history {
+    grid-template-columns: 1fr;
+  }
+
+  .history h2 {
+    font-size: 2rem;
+  }
+
+  .history img {
+    display: none;
+  }
+
+  /* Team */
+
+  .team {
+    padding-bottom: 40px;
+  }
+
+  .team h2 {
+    font-size: 2rem;
+  }
+
+  .team-content li {
+    padding: 10px;
+  }
+
+  /* curiosity */
+
+  .curiosity {
+    padding-bottom: 20px;
+  }
+
+  .curiosity h2 {
+    font-size: 2rem;
+  }
+
+  .tabs-menu button {
+    padding: 10px 20px;
+  }
+
+  .tab-content.active {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-content.active img {
+    display: none;
+  }
+
+  /* footer */
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 16px;
+  }
+
+  .footer img {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .footer .info {
+    border-left: var(--cor-1) 1px solid;
+  }
+
+  .info h3,
+  .info ul {
+    margin-left: 16px;
   }
 }
