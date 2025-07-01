@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: var(--cor-4);
+}
+
+[src$=".jpg"] {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+span {
+  color: var(--cor-p3);
+}

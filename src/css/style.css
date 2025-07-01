@@ -1,0 +1,14 @@
+/* GLOBAL */
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* UTILS */
+@import "./utils/componentes.css";
+@import "./utils/tipografia.css";
+@import "./utils/cor.css";
+
+/* HOME */
+@import "./theme/Home/main.css";
+@import "./theme/Home/history.css";
+@import "./theme/Home/team.css";

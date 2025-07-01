@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: var(--cor-0) 1.5px solid;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header nav ul li {
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.header nav ul li:hover {
+  background-color: var(--cor-0);
+}
